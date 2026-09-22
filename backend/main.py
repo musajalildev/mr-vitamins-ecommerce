@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Smart Expense Tracker API"}
+    return {"message": "Mr Vitamins API"}
 
 @app.get("/health")
 def health():
