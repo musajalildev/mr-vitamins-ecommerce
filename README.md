@@ -1,23 +1,35 @@
-# Smart Expense Tracker
+# Mr Vitamins E-Commerce
 
-A full-stack web application for tracking personal income and expenses,
-organising transactions into categories, and visualising spending patterns.
+A full-stack e-commerce web application for Mr Vitamins, built to provide customers with a simple way to browse vitamin and supplement products, manage their basket, and place orders online.
+
+This project is being developed as a full-stack software engineering project using React, FastAPI, and PostgreSQL.
 
 ## Tech Stack
 
+### Frontend
 - React
-- FastAPI
-- PostgreSQL
-- Python
 - JavaScript
 
-## Features
+### Backend
+- FastAPI
+- Python
 
-- Add expenses
-- Add income
-- Categorise transactions
-- View transaction history
-- View spending statistics
+### Database
+- PostgreSQL
+
+## Planned Features
+
+- Browse vitamin and supplement products
+- View individual product information
+- Search and filter products
+- Shopping basket
+- Customer checkout
+- Customer accounts
+- Order history
+- Stock management
+- Admin dashboard
+- Product management
+- Secure authentication
 
 ## Architecture
 
@@ -25,50 +37,3 @@ organising transactions into categories, and visualising spending patterns.
 flowchart LR
     A[React Frontend] -->|REST API| B[FastAPI Backend]
     B -->|SQL| C[(PostgreSQL Database)]
-```
-## Backend Setup
-
-### 1. Create a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-### 2. Activate the virtual environment
-
-On Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the backend
-
-```bash
-uvicorn backend.main:app --reload
-```
-
-The API will run at:
-
-`http://127.0.0.1:8000`
-
-### API Documentation
-
-FastAPI automatically provides interactive API documentation at:
-
-`http://127.0.0.1:8000/docs`
-
-## Testing
-
-## Future Improvements
-
-- User authentication
-- Budget limits
-- Deployment
-- Docker
